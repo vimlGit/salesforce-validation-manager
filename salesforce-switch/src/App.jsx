@@ -49,7 +49,7 @@ function App() {
   try {
 
     const response = await axios.get(
-      "http://localhost:8080/api/rules",
+      "https://salesforce-backend-f15c.onrender.com/api/rules",
       {
         params: {
           token: token,
