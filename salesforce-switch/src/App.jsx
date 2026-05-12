@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 const CLIENT_ID = "3MVG97L7PWbPq6UyADfwaNnE1ZyCM8oWYH7u_t2SqlmAoTrfReM63xq5KzTY.FlC_.BVqrJqcdEl6eeScDqyk";
-const REDIRECT_URI = "http://localhost:5173";
+const REDIRECT_URI = "https://salesforce-validation-manager-nine.vercel.app";
 
 function App() {
   const [token, setToken] = useState("");
@@ -79,7 +79,7 @@ function App() {
 const toggleRule = async (rule) => {
   try {
     await axios.patch(
-      "http://localhost:8080/api/toggleRule",
+      "https://salesforce-backend-f15c.onrender.com/api/toggleRule",
       {
         token: token,
         instanceUrl: instanceUrl,
